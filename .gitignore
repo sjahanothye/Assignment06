@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# assignment instructions temp folder
+B14-A6-Fit-Log/
+
