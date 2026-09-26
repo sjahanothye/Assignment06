@@ -12,8 +12,9 @@
 
 ## 🔗 Project Links
 
-- **Live Demo**: [https://fitlog-gym.vercel.app](https://fitlog-gym.vercel.app) *(or your deployed Vercel/Netlify URL)*
+- **Live Demo (Vercel)**: [https://assignment06-sjahanothye.vercel.app](https://assignment06-sjahanothye.vercel.app)
 - **GitHub Repository**: [https://github.com/sjahanothye/Assignment06](https://github.com/sjahanothye/Assignment06)
+
 
 ---
 
