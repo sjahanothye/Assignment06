@@ -25,10 +25,10 @@ export const HeroBanner: React.FC = () => {
                 WORKOUT LIBRARY
               </p>
 
-              {/* Main Heading (Oswald bold display font) */}
-              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white uppercase tracking-normal leading-[1.02]">
-                TRAIN WITH INTENT. <br />
-                LOG EVERY SET.
+              {/* Main Heading: Fixed 2-line break after the dot (.) */}
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-bold text-white uppercase tracking-tight leading-[1.02]">
+                <span className="block">TRAIN WITH INTENT.</span>
+                <span className="block">LOG EVERY SET.</span>
               </h1>
 
               {/* Subtitle */}
