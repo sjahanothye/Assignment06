@@ -10,6 +10,7 @@
   --accent-hover: #b8e600;
   --accent-text: #09090b;
   --muted: #71717a;
+  --font-oswald: 'Oswald', sans-serif;
   --font-inter: 'Inter', sans-serif;
 }
 
@@ -31,11 +32,11 @@
   }
 }
 
-/* Custom Display Heading Font - Exact Figma Sans-Serif Weight */
+/* Custom Display Heading Font (Oswald Display Font as requested in Assignment Requirements) */
 .font-display {
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
-  letter-spacing: -0.02em;
-  font-weight: 800;
+  font-family: var(--font-oswald), 'Oswald', sans-serif;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 /* Card Hover Lift */

@@ -13,26 +13,26 @@ export const HeroBanner: React.FC = () => {
   };
 
   return (
-    <section className="w-full pt-6 pb-10 bg-[#09090b]">
+    <section className="w-full pt-6 pb-12 bg-[#09090b]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Enclosed Hero Card Container (Figma layout) */}
+        {/* Enclosed Hero Card Container */}
         <div className="bg-[#121217] border border-[#1e1e28] rounded-3xl p-8 sm:p-12 lg:p-14 relative overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
-            <div className="lg:col-span-7 space-y-5 text-left">
+            <div className="lg:col-span-7 space-y-6 text-left">
               {/* Eyebrow */}
-              <p className="text-[#ccff00] text-xs font-bold uppercase tracking-wider">
+              <p className="text-[#ccff00] text-xs font-bold uppercase tracking-widest">
                 WORKOUT LIBRARY
               </p>
 
-              {/* Main Heading - Matching exact Figma typography */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-black text-white uppercase tracking-tight leading-[1.08]">
+              {/* Main Heading (Oswald bold display font) */}
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white uppercase tracking-normal leading-[1.02]">
                 TRAIN WITH INTENT. <br />
                 LOG EVERY SET.
               </h1>
 
               {/* Subtitle */}
-              <p className="text-sm sm:text-base text-zinc-400 max-w-lg leading-relaxed font-normal">
+              <p className="text-sm sm:text-base text-zinc-400 max-w-xl leading-relaxed font-normal">
                 FitLog is a dark, no-nonsense gym companion: pick a lift, lock it into today&apos;s plan, and watch the week&apos;s work add up.
               </p>
 
@@ -42,7 +42,7 @@ export const HeroBanner: React.FC = () => {
                   href="#library"
                   onClick={scrollToLibrary}
                   id="hero-cta-button"
-                  className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#ccff00] hover:bg-[#b8e600] text-[#09090b] text-sm font-extrabold uppercase tracking-wider transition-all duration-200 shadow-sm hover:scale-[1.02] active:scale-[0.98]"
+                  className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#ccff00] hover:bg-[#b8e600] text-[#09090b] font-display text-base font-bold uppercase tracking-wider transition-all duration-200 shadow-md shadow-[#ccff00]/10 hover:scale-[1.02] active:scale-[0.98]"
                 >
                   <span>BROWSE WORKOUTS</span>
                 </a>
@@ -51,7 +51,7 @@ export const HeroBanner: React.FC = () => {
 
             {/* Right Banner Image */}
             <div className="lg:col-span-5 flex items-center justify-center lg:justify-end">
-              <div className="relative w-full max-w-xs sm:max-w-sm aspect-[4/3.5]">
+              <div className="relative w-full max-w-xs sm:max-w-md aspect-[4/3.5]">
                 <Image
                   src="/banner.png"
                   alt="FitLog Gym Athlete"
