@@ -10,7 +10,6 @@
   --accent-hover: #b8e600;
   --accent-text: #09090b;
   --muted: #71717a;
-  --font-oswald: 'Oswald', sans-serif;
   --font-inter: 'Inter', sans-serif;
 }
 
@@ -32,42 +31,11 @@
   }
 }
 
-/* Custom Display Heading Font */
+/* Custom Display Heading Font - Exact Figma Sans-Serif Weight */
 .font-display {
-  font-family: var(--font-oswald), sans-serif;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-/* Custom Glow & Neon Accents */
-.accent-glow {
-  box-shadow: 0 0 25px rgba(204, 255, 0, 0.25);
-}
-
-.accent-glow-sm {
-  box-shadow: 0 0 12px rgba(204, 255, 0, 0.2);
-}
-
-.accent-glow-lg {
-  box-shadow: 0 0 45px rgba(204, 255, 0, 0.35);
-}
-
-.badge-plan {
-  background-color: #ccff00;
-  color: #09090b;
-  font-weight: 700;
-}
-
-.badge-saved {
-  background: transparent;
-  border: 1.5px solid #3f3f4e;
-  color: #e4e4e7;
-  font-weight: 600;
-}
-
-.badge-saved:hover {
-  border-color: #ccff00;
-  color: #ccff00;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 800;
 }
 
 /* Card Hover Lift */
