@@ -10,6 +10,17 @@ interface LibrarySectionProps {
   isLoading?: boolean;
 }
 
+const MUSCLE_FILTERS: MuscleFilter[] = [
+  "All",
+  "Chest",
+  "Back",
+  "Legs",
+  "Core",
+  "Arms",
+  "Shoulders",
+  "Full Body",
+];
+
 export const LibrarySection: React.FC<LibrarySectionProps> = ({
   initialWorkouts,
   isLoading = false,
@@ -61,7 +72,7 @@ export const LibrarySection: React.FC<LibrarySectionProps> = ({
   return (
     <section id="library" className="w-full py-10 md:py-16 bg-[#09090b]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-        {/* Section Header (Matching Figma) */}
+        {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
           <div className="space-y-1">
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight uppercase">
@@ -119,6 +130,27 @@ export const LibrarySection: React.FC<LibrarySectionProps> = ({
               </>
             )}
           </div>
+        </div>
+
+        {/* Category Filter Pills Row */}
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pt-1 pb-2">
+          {MUSCLE_FILTERS.map((muscle) => {
+            const isActive = selectedMuscle === muscle;
+            return (
+              <button
+                key={muscle}
+                onClick={() => setSelectedMuscle(muscle)}
+                className={`px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase transition-all shrink-0 ${
+                  isActive
+                    ? "bg-[#ccff00] text-[#09090b] shadow-sm font-extrabold"
+                    : "bg-[#14141c] hover:bg-[#1c1c28] text-zinc-400 hover:text-white border border-[#22222e]"
+                }`}
+                id={`filter-muscle-${muscle.toLowerCase().replace(" ", "-")}`}
+              >
+                {muscle}
+              </button>
+            );
+          })}
         </div>
 
         {/* Workouts Grid (3x4 Grid on Large Screens, 2-Col Tablet, 1-Col Mobile) */}
