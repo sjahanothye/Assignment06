@@ -12,8 +12,9 @@
 
 ## 🔗 Project Links
 
-- **Live Demo (Vercel)**: [https://assignment06-sjahanothye.vercel.app](https://assignment06-sjahanothye.vercel.app)
+- **Live Demo (Vercel)**: [https://assignment06-wheat.vercel.app](https://assignment06-wheat.vercel.app)
 - **GitHub Repository**: [https://github.com/sjahanothye/Assignment06](https://github.com/sjahanothye/Assignment06)
+
 
 
 ---

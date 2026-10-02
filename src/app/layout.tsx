@@ -19,7 +19,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://assignment06-sjahanothye.vercel.app"),
+  metadataBase: new URL("https://assignment06-wheat.vercel.app"),
   title: "FitLog — Train With Intent. Log Every Set.",
   description:
     "FitLog is a dark, no-nonsense gym companion: pick a lift, lock it into today's plan, and watch the week's work add up.",
